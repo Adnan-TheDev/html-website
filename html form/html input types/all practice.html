@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>HTML For</title>
+</head>
+<body>
+   <h1>HTML Form Input Typea</h1>
+      <h2>Input Type Text</h2>
+  <form action="/action_page.php"
+    oninput="adnan.value=parseInt(dani.value)+parseInt(bhai.value)">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname">
+    <h2>Input Type  Radio</h2>
+     <p>Select the gender:</p>
+        <input type="radio" id="male" name="gender">
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender">
+        <label for="female">Female</label><br>
+        <input type="radio" id="other" name="gender">
+        <label for="other">Other</label>
+   <h2>Input Type Checkbox</h2>
+     <p>Select your Hobbbies</p>
+        <input type="checkbox" id="cricket" name="match">
+        <label for="cricket">I Play a Circket</label><br>
+        <input type="checkbox" id="football" name="football">
+        <label for="football">I Play a Football</label><br>
+        <input type="checkbox" id="hockey" name="hockey">
+        <label for="hockey">I Play a Hockey</label>
+    <h2>Input type file</h2>
+      <label for="myfile">Choose a file</label>
+      <input type="file" id="myfile" name="myfile" multiple>
+<h2>input type hidden</h2>
+     <label for="contact"></label>
+    <inpuit type="hidden" id="n">
+  <h2>Inpu type number with restriction</h2>
+      <label for="favno">Enter Fav Number(1 to 9):</label>
+      <input type="number" id="favno" name="favno" min="0" max="9">
+  <h2>Input Type Number With step</h2>
+       <label for="fav">Enter Fav Number(1 to 1000):</label>
+       <input type="number" id="fav" name="fav" min="0" max="1000" step="20">
+  <h2>Input Type Color</h2>
+       <label for="favcolor">Choose a fav Color:</label>
+       <input type="color" id="favcolor" name="favcolor">
+   <h2>Input type Date</h2>
+      <label for="date">Date of Birth:</label>
+      <input type="date" id="date" name="date">
+  <h2>Input Type Month</h2>
+      <label for="dobmonth">Birthday(in month and year):</label>
+      <input type="month" id="dobmonth" name="dobmonth">
+  <h2>Input Type Week</h2>
+       <label for="dobweek">Birthday(in week and year):</label>
+       <input type="week" id="dobweek" name="dobweek">
+  <h2>Input Type Date and Time</h2>
+        <label for="dobtime">Birthday(with date and time):</label>
+        <input type="datetime" id="dobtime" name="dobtime">
+  <h2>Input type Button</h2>
+      <button type="button" onclick="alert('form ko agy fill kro')">clik it</button>
+  <h2>Input Type Date Time local</h2>
+       <label for="datetime">Birthday(date time local):</h2>
+       <input type="datetime-local" id="datetime" name="datetime">
+  <h2>Input Type Date With restriction</h2>
+       <label fr="dobmax">Enter a Birthday Date Before(1999-12-31):</label>
+       <input type="date" id="dobmax" name="dobmax" max="1999-12-31"><br><br>
+       <label for="dobmin">Enter a Birthday Date After(2000-01-01):</label>
+       <input type="date" id="dobmin" name="dobmin" min="2000-01-01">
+   <h2>Input Type Time</h2>
+        <label for="time">Birthday(time):</label>
+        <input type="time" id="time" name="time"> 
+   <h2>Input Type Email</h2>
+       <label for="email">Enter a Email:</label><br>
+       <input type="email" id="email" name="email" placeholder="@gmail.com">
+  <h2>Input Type Password</h2>
+       <label for="pin">Enter Password:</label><br>
+      <input type="password" id="pin" name="pin" placeholder="........" required> 
+  <h2>Input type search</h2>
+      <label for="gsearch">Google Search:</label>
+      <input type="search" id="gsearch" name="gsearch">
+  <h2>Input Type Range</h2>
+     <input type="range" id="dani" name="dani" value="0">100 +
+     <input type="number" id="bhai" name="bhai" value="50">=
+     <output name="adnan" for="dani bhai"></output>
+   <h2>Input type Tel</h2>
+      <label for="Phone">Enter a Phone Number:</label>
+      <input type="tel" id="phone" name="phone" placeholder="123-45-6789" pattern="[1-9]{3}-[A-Zz-a]{2}">
+   <h2>Input type URL</h2>
+       <label for="homepage">About your Homepage</label>
+       <input type="url" id="homepage" name="homepage" placeholder="https://www" required><br><br>
+       <input type="image" src="images/img_submit.gif" alt="submit" width="60px" height="50px">
+       <input type="reset" value="submit">
+       <input type="image" src="images/img_submit.gif" alt="reset" width="60px" height="50px">
+       <input type="reset" value="reset">
+</form>       
+</body>
+</html>

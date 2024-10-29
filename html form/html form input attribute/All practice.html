@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Form</title>
+</head>
+<body>
+   <h2>The Form attribute</h2>
+  <form action="/action_page.php" id="form2">
+      <label for="fname">First name:</label><br>
+     <input type="text" id="fname" name="fname"><br><br>
+<input type="submit" value="submit">
+</form>
+   <p>the Last name is the parth of the form buth show the out of form</p>
+      <label for="lname">Last name:</label><br>
+      <input type="text" id="lname" name="lname" form="form2" required>
+     <h2>The Formaction attribute</h2>
+ <form action="/action_page.php">
+    <label for="name">Username</label>
+    <input type="text" id="name" name="name"><br><br>
+    <input type="submit" value="submit">
+     <input type="submit" formaction="/action_page.php" value="submit Me">  
+</form>
+ <h2>the Formenctype attribute</h2>
+<form action="/action_page.php">
+   <label for="fname">Father name:</label>
+   <input type="text" id="fname" name="fname"><br><br>
+    <input type="submit" value="submit">
+    <input type="submit" formenctype="multipart/form-data" value="submit the multiple">
+</form>
+<h2>The Autocomplete attribute</h2>
+ <form action="/action_page.php" autocomplete="on">
+     <label for="fname">Father name:</label><br>
+   <input type="text" id="fname" name="fname"><br>
+   <label for="mname">Mother name:</label><br>
+     <input type="text" id="mname" name="mname" autocomplete="off"><br><br>
+    <input type="submit" value="submit">
+  <h2>The Target attribute</h2>
+<form action="/action_page.php">
+    <label for="fname">Friend name:</label>
+   <input type="text" id="fname" name="fname"><br><br>
+    <input type="submit" value="submit">
+    <input type="submit" target="_blank" value="submit with new window">
+</form>
+<h2>Post and get method</h2>
+<form action="/action_page.php" method="get">
+        <label for="flname">Full name:</label>
+   <input type="text" id="flname" name="flname"><br><br>
+    <input type="submit" value="submit with Get">
+    <input type="submit" formmethod="post" value="submit With Post">
+</form>
+  <h2>Th novilated attribute</h2>
+     <form action="/action_page.php" novalidate>
+     <label for="fname">Father name:</label>
+   <input type="text" id="fname" name="fname"><br><br>
+    <input type="submit" value="submit">
+</form>
+<h2>the Novalidate attribute</h2>
+ <form action="/action_page.php">
+     <label for="fname">Father name:</label>
+   <input type="text" id="fname" name="fname"><br><br>
+    <input type="submit" value="submit">
+   <input type="submit" formvalidate="novalidate" value="Submit with validation">
+</body>
+</html>

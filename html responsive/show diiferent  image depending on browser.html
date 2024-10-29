@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Show difereent images depending of the browser</h2>
+    <p>REsiz ethe browser width and image will change at 400 to 1500px</p>
+    <picture>
+
+          <source srcset="image\food.jpg" media="(min-width: 1000px)">
+          <source srcset="image\car.jpg" media="(min-width: 800px)">
+          <img src="image/img_food.jpg" alt="food" width="auto">
+
+    </picture>
+</body>
+</html>
